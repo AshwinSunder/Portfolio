@@ -1,0 +1,17 @@
+basename = ../Output/plunge/Postpro/Intloads/Intloads_h0_04_k3_925_kh0_157
+data_basename = ../Output/plunge/dust/wing
+
+analysis = {
+type   = integral_loads
+name   = SD7003
+format = dat
+
+start_res = 1
+end_res = 1001
+step_res = 1
+
+average = F
+component = Wing
+
+reference_tag = 0
+}

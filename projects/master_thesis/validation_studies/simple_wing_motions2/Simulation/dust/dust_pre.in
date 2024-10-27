@@ -1,0 +1,5 @@
+comp_name = Wing
+geo_file  = ../Model/Wing/wing.in
+ref_tag   = Wing
+
+file_name = ./dust/geo_input.h5

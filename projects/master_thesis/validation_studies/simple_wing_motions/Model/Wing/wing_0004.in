@@ -1,0 +1,38 @@
+!> === Mesh and elements types ===
+mesh_file_type = parametric
+el_type       = p
+
+!> === Geometry definition ===
+starting_point = (/ 0.0 , -0.64 , 0.0/)
+reference_chord_fraction = 0.25
+
+nelem_chord = 25
+type_chord = cosineLE
+! First section
+chord = 0.24 
+twist = 0.0
+airfoil = NACA0004
+
+! First region
+span = 0.64
+sweep = 0.0
+dihed = 0.0
+nelem_span = 40
+type_span = uniform
+
+! Second section
+chord = 0.24 
+twist = 0.0
+airfoil = NACA0004
+
+! Second region
+span = 0.64
+sweep = 0.0
+dihed = 0.0
+nelem_span = 10
+type_span = uniform
+
+! Third section
+chord = 0.24 
+twist = 0.0
+airfoil = NACA0004

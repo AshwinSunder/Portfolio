@@ -1,0 +1,17 @@
+basename = ../Output/pitch_4/Postpro/Intloads/Intloads_alpha2_k0_804
+data_basename = ../Output/pitch_4/dust/wing
+
+analysis = {
+type   = integral_loads
+name   = NACA0024
+format = dat
+
+start_res = 1
+end_res = 3000
+step_res = 1
+
+average = F
+component = Wing
+
+reference_tag = 0
+}

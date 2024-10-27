@@ -1,0 +1,109 @@
+!!!!
+! Flowfield visualisations in the thesis created for the simulation folder: J1_07_alpha4_2_xp0_841_yp0_51_zp0_alpha_prop0_blade_angle25_IU_LT
+! Any set of wing_prop simulation files can be used. Simply run this folder using the dust_post function from this folder: 'dust_post dustPost_Flowfield_WP.in'
+! In this file, 5 different chordwise locations (-0.2, -0.06: Used in thesis; 0.0, 0.18, 0.28: Not used in thesis) have been chosen and the Y-Z plane visualisations have been created.
+! Read DUST documentation on how to vary the parameters. Note: start_res cannot be 1 for Pressure, Cp visualisations.
+!!!!
+
+basename = ../../Output/wing_propeller/Postpro/Flowfield/Flowfield_J1_07_alpha4_2_xp0_841_yp0_51_zp0_alpha_prop0_blade_angle25_IU_LT
+data_basename = ../../Output/wing_propeller/dust_2/wing_prop
+
+analysis = {
+type   = flow_field
+name   = WP_1
+format = vtk
+
+start_res = 2
+end_res = 800
+step_res = 1
+average = F
+
+variable = Velocity
+variable = Pressure
+variable = Cp
+variable = Vorticity
+
+n_xyz = (/ 1, 150, 80/)
+min_xyz = (/ -0.2, -0.8, -0.15 /)
+max_xyz = (/ -0.2, 0.0, 0.15 /)
+}
+
+analysis = {
+type   = flow_field
+name   = WP_2
+format = vtk
+
+start_res = 2
+end_res = 800
+step_res = 1
+average = F
+
+variable = Velocity
+variable = Pressure
+variable = Cp
+variable = Vorticity
+
+n_xyz = (/ 1, 150, 80/)
+min_xyz = (/ -0.06, -0.8, -0.15 /)
+max_xyz = (/ -0.06, 0.0, 0.15 /)
+}
+
+analysis = {
+type   = flow_field
+name   = WP_3
+format = vtk
+
+start_res = 2
+end_res = 800
+step_res = 1
+average = F
+
+variable = Velocity
+variable = Pressure
+variable = Cp
+variable = Vorticity
+
+n_xyz = (/ 1, 150, 80/)
+min_xyz = (/ 0.0, -0.8, -0.15 /)
+max_xyz = (/ 0.0, 0.0, 0.15 /)
+}
+
+analysis = {
+type   = flow_field
+name   = WP_4
+format = vtk
+
+start_res = 2
+end_res = 800
+step_res = 1
+average = F
+
+variable = Velocity
+variable = Pressure
+variable = Cp
+variable = Vorticity
+
+n_xyz = (/ 1, 150, 80/)
+min_xyz = (/ 0.18, -0.8, -0.15 /)
+max_xyz = (/ 0.18, 0.0, 0.15 /)
+}
+
+analysis = {
+type   = flow_field
+name   = WP_5
+format = vtk
+
+start_res = 2
+end_res = 800
+step_res = 1
+average = F
+
+variable = Velocity
+variable = Pressure
+variable = Cp
+variable = Vorticity
+
+n_xyz = (/ 1, 150, 80/)
+min_xyz = (/ 0.28, -0.8, -0.15 /)
+max_xyz = (/ 0.28, 0.0, 0.15 /)
+}

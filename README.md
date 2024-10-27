@@ -15,8 +15,8 @@ I have a background in aerospace engineering, where I have developed expertise i
                      ![image](https://github.com/user-attachments/assets/befcfc04-ad23-4300-b0ab-088ba7fea287)
                      ![image](https://github.com/user-attachments/assets/250326a7-66fd-4194-a8bd-c7b47b7a9fa8)
 
-### Aerodynamic Simulation with DUST
-- **Description**: Aerodynamic simulations performed using DUST, a potential flow-based aerodynamic solver. This project includes detailed analyses of lift and moment coefficient and phase calculations and interpretations of the aerodynamic forces on wing structures, FFT analysis of time-varying forces, eigenvalue/eigenvector calculations, and more.
+### Aerodynamic Investigation of Propeller-Wing Interaction foe Simple Motions and Complex Modes (Master Thesis)
+- **Description**: Aerodynamic simulations performed using DUST, a potential flow-based aerodynamic solver on wing-propeller models undergoing simple wing modes such as pitch and plunge, and complex modes such as wing mode shapes. This project includes detailed analyses of lift and moment coefficient and phase calculations and interpretations of the aerodynamic forces on wing structures, FFT analysis of time-varying forces, eigenvalue/eigenvector calculations, and more.
 - **Skills Used**: Potential flow theory, aerodynamic load calculations, MATLAB, signal processing, eigenmode analysis
 - **Highlights**: Includes analysis of integral loads, lift and moment forces, visualizations of wing motion, FFT analysis of force data, and complex mode interpretation.
                      ![image](https://github.com/user-attachments/assets/e2186d6c-5843-4981-9ec8-77d449056413)

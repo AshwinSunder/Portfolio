@@ -1,0 +1,50 @@
+!Simulation name
+basename = ../../Output/wing_only/dust/wing
+
+! --- Geometry files ---
+geometry_file = geo_input.h5
+reference_file = References.in
+
+! --- Time parameters ---
+tstart = 0
+tend   = 0.365
+dt     = 0.002
+dt_out = 0.002
+output_start = T
+
+! --- Restart ---
+restart_from_file = F
+
+! --- Reference values ---
+rho_inf = 1.225
+a_inf   = 340.0
+u_inf   = (/ 50.0 ,0.0,0.0/)
+
+! Model parameters -------------------
+fmm = T
+vortstretch = T
+diffusion = T
+penetration_avoidance = T
+
+! wake parameters  -------------
+n_wake_panels = 3
+n_wake_particles = 500000
+particles_box_min = (/  -3, -2, -3 /)
+particles_box_max = (/  14,  9, 3 /)
+!implicit_panel_scale = 0.1
+
+! octree parameters--------------------
+box_length = 1
+n_box = (/17 , 11 , 6/)
+octree_origin = (/-3 , -2 , -3/)
+n_octree_levels = 4
+min_octree_part = 5
+multipole_degree = 2
+
+! solver settings -----------------
+aitken_relaxation = T
+vl_maxiter = 500
+
+! lifting lines solver-----------------
+!ll_solver = AlphaMethod
+!ll_tol = 1.0e-6

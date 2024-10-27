@@ -1,0 +1,22 @@
+basename = ../../Output/wing_propeller_3/Postpro/Viz/wing_prop
+data_basename = ../../Output/wing_propeller_3/dust/wing_prop
+
+analysis = {
+  name = Viz
+  type = Viz
+
+  format = vtk
+
+  start_res = 1
+  end_res   = 200
+  step_res  = 1
+
+  wake          = T
+  separate_wake = T
+
+  variable = Vorticity
+  variable = Velocity
+  variable = Pressure
+
+  component = all
+}

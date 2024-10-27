@@ -1,0 +1,19 @@
+basename = ../Output/pitch_4/Postpro/Secloads/Secloads_alpha2_k0_804
+data_basename = ../Output/pitch_4/dust/wing
+
+analysis = {
+type   = sectional_loads
+name   = NACA0024
+format = dat
+
+start_res = 1
+end_res = 3000
+step_res = 1
+
+average = F
+component = Wing
+
+axis_nod = (/ 0.0, -0.64, 0.0 /)
+axis_dir = (/ 0.0, 1.0, 0.0 /)
+}
+
