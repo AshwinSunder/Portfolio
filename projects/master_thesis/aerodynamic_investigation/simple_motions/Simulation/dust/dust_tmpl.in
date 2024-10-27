@@ -1,0 +1,50 @@
+!Simulation name
+basename = @output_file
+
+! --- Geometry files ---
+geometry_file = geo_input.h5
+reference_file = References.in
+
+! --- Time parameters ---
+tstart = 0
+tend   = @tf
+dt     = @dt
+dt_out = @dt
+output_start = T
+
+! --- Restart ---
+restart_from_file = F
+
+! --- Reference values ---
+rho_inf = @density
+a_inf   = 340.0
+u_inf   = (/ @vel ,0.0,0.0/)
+
+! Model parameters -------------------
+fmm = T
+vortstretch = T
+diffusion = T
+penetration_avoidance = T
+
+! wake parameters  -------------
+n_wake_panels = 3
+n_wake_particles = 400000
+particles_box_min = (/  -1.32, -1, -0.5 /)
+particles_box_max = (/  1.68,  1,  0.5/)
+!implicit_panel_scale = 0.1
+
+! octree parameters--------------------
+box_length = 1
+n_box = (/3 , 2 , 1/)
+octree_origin = (/-1.32 , -1 , -0.5/)
+n_octree_levels = 5
+min_octree_part = 6
+multipole_degree = 2
+
+! solver settings -----------------
+aitken_relaxation = T
+vl_maxiter = 500
+
+! lifting lines solver-----------------
+!ll_solver = AlphaMethod
+!ll_tol = 1.0e-6

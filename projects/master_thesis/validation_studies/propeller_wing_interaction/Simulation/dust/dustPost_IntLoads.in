@@ -1,0 +1,32 @@
+basename = ../../Output/wing_propeller_3/Postpro/Intloads/Intloads_h0_k0_alphaprop0_kprop0_phaseprop0
+data_basename = ../../Output/wing_propeller_3/dust/wing_prop
+
+analysis = {
+type   = integral_loads
+name   = W
+format = dat
+
+start_res = 1
+end_res = 3000
+step_res = 1
+
+average = F
+component = Wing
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = P
+format = dat
+
+start_res = 1
+end_res = 3000
+step_res = 1
+
+average = F
+component = Prop01
+
+reference_tag = 0
+}

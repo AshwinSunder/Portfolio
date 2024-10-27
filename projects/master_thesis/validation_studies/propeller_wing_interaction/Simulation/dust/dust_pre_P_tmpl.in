@@ -1,0 +1,5 @@
+comp_name = Prop01
+geo_file = @blade_file
+ref_tag = Prop01
+
+file_name = geo_input.h5

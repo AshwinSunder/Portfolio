@@ -1,0 +1,65 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_1
+parent_tag = @parent_1
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = T
+motion = {
+pole = {
+input = position
+input_type = simple_function
+function = (/ 0 , 0 , 0 /)
+amplitude = 0.00
+vector = (/ 0.0 , 0.0 , 0.0 /)
+omega = (/ 0.0 , 0.0 , 0.0 /)
+phase = (/ 0.0 , 0.0 , 0.0 /)
+offset = (/ 0.0 , 0.0 , 0.0 /)
+}
+rotation = {
+input = position
+input_type = simple_function
+function = 0
+Axis = (/ 0.0 , 1.0 , 0.0 /)
+amplitude = @amp
+omega = 0.0
+phase = 0.0
+offset = 0.0
+psi_0 = 0.0
+}
+}
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_2
+parent_tag = @parent_2
+origin = (/@xp1, @yp , @zp /)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = F
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_3
+parent_tag = @parent_3
+origin = (/ @xp2 , 0.0, 0.0/)
+orientation = @orientation
+multiple = F
+moving = F
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_4
+parent_tag = @parent_4
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = T
+moving = F
+Multiplicity = {
+  mult_type  = rotor
+  n_blades   = 4
+  rot_axis   = @rot_axis
+  rot_rate   = @rot_rate
+  psi_0      = 0.0
+  hub_offset = 0.0
+  n_dofs     = 0
+}

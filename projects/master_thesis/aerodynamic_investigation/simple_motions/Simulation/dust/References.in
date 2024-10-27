@@ -1,0 +1,88 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = Wing
+parent_tag = 0
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = T
+motion = {
+pole = {
+input = position
+input_type = simple_function
+function = (/ 0 , 0 , 1 /)
+amplitude = 0.0
+vector = (/ 0.0 , 0.0 , 1.0 /)
+omega = (/ 0.0 , 0.0 , 0 /)
+phase = (/ 0.0 , 0.0 , 0.0 /)
+offset = (/ 0.0 , 0.0 , 0.0 /)
+}
+rotation = {
+input = position
+input_type = simple_function
+function = 0
+Axis = (/ 0.0 , 0.0 , 0.0 /)
+amplitude = 0.0
+omega = 0.0
+phase = 0.0
+offset = 0.0
+psi_0 = 0.0
+}
+}
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = PivotPoint
+parent_tag = Wing
+origin = (/0.0, -0.32 , 0.0 /)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = F
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = Hub01
+parent_tag = PivotPoint
+origin = (/ -0.2618 , 0.0, 0.0/)
+orientation = (/ -1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -1.0 /)
+multiple = F
+moving = T
+motion = {
+pole = {
+input = position
+input_type = simple_function
+function = (/ 0 , 0 , 0 /)
+amplitude = 0.00
+vector = (/ 0.0 , 0.0 , 0.0 /)
+omega = (/ 0.0 , 0.0 , 0.0 /)
+phase = (/ 0.0 , 0.0 , 0.0 /)
+offset = (/ 0.0 , 0.0 , 0.0 /)
+}
+rotation = {
+input = position
+input_type = simple_function
+function = 1
+Axis = (/ 0.0 , 1.0 , 0.0 /)
+amplitude = 0.0
+omega = 0
+phase = 0
+offset = 0.0
+psi_0 = 0.0
+}
+}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = Prop01
+parent_tag = Hub01
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = T
+moving = F
+Multiplicity = {
+  mult_type  = rotor
+  n_blades   = 4
+  rot_axis   = (/-1.0, 0.0, 0.0/)
+  rot_rate   = 1479.0925864358726
+  psi_0      = 0.0
+  hub_offset = 0.0
+  n_dofs     = 0
+}

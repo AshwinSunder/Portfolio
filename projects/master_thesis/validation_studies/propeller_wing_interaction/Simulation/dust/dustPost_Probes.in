@@ -1,0 +1,83 @@
+basename = ../../Output/propeller_only/Postpro/Probes/Probes_J2_blade_angle25_blade_twist48_blade_width0_053_density1_2_vel20_207
+data_basename = ../../Output/propeller_only/dust/prop
+
+!analysis = {
+!type   = probes
+!name   = P
+!format = dat
+
+!start_res = 2
+!end_res = 460
+!step_res = 1
+
+!variable = Pressure
+
+!input_type = point_list
+!point = (/ 0.0, 0.0, 0.0 /)
+!point = (/ 0.0, 0.0, 0.0118 /)
+!point = (/ 0.0, 0.0, 0.0236 /)
+!point = (/ 0.0, 0.0, 0.0354 /)
+!point = (/ 0.0, 0.0, 0.0472 /)
+!point = (/ 0.0, 0.0, 0.059 /)
+!point = (/ 0.0, 0.0, 0.0708 /)
+!point = (/ 0.0, 0.0, 0.0826 /)
+!point = (/ 0.0, 0.0, 0.0944 /)
+!point = (/ 0.0, 0.0, 0.1062 /)
+!point = (/ 0.0, 0.0, 0.118 /)
+!point = (/ 0.0, 0.0, 0.1298 /)
+!point = (/ 0.0, 0.0, 0.1416 /)
+!}
+
+analysis = {
+type   = probes
+name   = P_Vel
+format = dat
+
+start_res = 1
+end_res = 460
+step_res = 1
+
+variable = Velocity
+
+input_type = point_list
+point = (/ 0.0, 0.0, 0.0 /)
+point = (/ 0.0, 0.0, 0.0118 /)
+point = (/ 0.0, 0.0, 0.0236 /)
+point = (/ 0.0, 0.0, 0.0354 /)
+point = (/ 0.0, 0.0, 0.0472 /)
+point = (/ 0.0, 0.0, 0.059 /)
+point = (/ 0.0, 0.0, 0.0708 /)
+point = (/ 0.0, 0.0, 0.0826 /)
+point = (/ 0.0, 0.0, 0.0944 /)
+point = (/ 0.0, 0.0, 0.1062 /)
+point = (/ 0.0, 0.0, 0.118 /)
+point = (/ 0.0, 0.0, 0.1298 /)
+point = (/ 0.0, 0.0, 0.1416 /)
+}
+
+analysis = {
+type   = probes
+name   = P_cp
+format = dat
+
+start_res = 2
+end_res = 460
+step_res = 1
+
+variable = cp
+
+input_type = point_list
+point = (/ 0.0, 0.0, 0.0 /)
+point = (/ 0.0, 0.0, 0.0118 /)
+point = (/ 0.0, 0.0, 0.0236 /)
+point = (/ 0.0, 0.0, 0.0354 /)
+point = (/ 0.0, 0.0, 0.0472 /)
+point = (/ 0.0, 0.0, 0.059 /)
+point = (/ 0.0, 0.0, 0.0708 /)
+point = (/ 0.0, 0.0, 0.0826 /)
+point = (/ 0.0, 0.0, 0.0944 /)
+point = (/ 0.0, 0.0, 0.1062 /)
+point = (/ 0.0, 0.0, 0.118 /)
+point = (/ 0.0, 0.0, 0.1298 /)
+point = (/ 0.0, 0.0, 0.1416 /)
+}

@@ -1,0 +1,19 @@
+basename = ../../Output/wing_propeller_3/Postpro/Secloads/Secloads_h0_k0_alphaprop0_kprop0_phaseprop0
+data_basename = ../../Output/wing_propeller_3/dust/wing_prop
+
+analysis = {
+type   = sectional_loads
+name   = W
+format = dat
+
+start_res = 1
+end_res = 3000
+step_res = 1
+
+average = F
+component = Wing
+
+axis_nod = (/ 0.0, -0.64, 0.0 /)
+axis_dir = (/ 0.0, 1.0, 0.0 /)
+}
+

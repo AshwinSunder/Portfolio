@@ -1,0 +1,9 @@
+comp_name = Wing
+geo_file  = ../../Model/Wing/wing_prowim.in
+ref_tag   = Wing
+
+comp_name = Prop01
+geo_file = ../../Model/Blades/blade.in
+ref_tag = Prop01
+
+file_name = geo_input.h5

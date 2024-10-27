@@ -1,0 +1,30 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = Wing
+parent_tag = 0
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = T
+motion = {
+pole = {
+input = position
+input_type = simple_function
+function = (/ 0 , 0 , 1 /)
+amplitude = 0.04
+vector = (/ 0.0 , 0.0 , 1.0 /)
+omega = (/ 0.0 , 0.0 , 266.9 /)
+phase = (/ 0.0 , 0.0 , 3.141592653589793 /)
+offset = (/ 0.0 , 0.0 , 0.0 /)
+}
+rotation = {
+input = position
+input_type = simple_function
+function = 0
+Axis = (/ 0.0 , 0.0 , 0.0 /)
+amplitude = 0.0
+omega = 0.0
+phase = 0.0
+offset = 0.0
+psi_0 = 0.0
+}
+}

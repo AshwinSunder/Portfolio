@@ -1,0 +1,17 @@
+basename = @sim_name
+data_basename = @output_file
+
+analysis = {
+type   = integral_loads
+name   = @comp_name_1
+format = dat
+
+start_res = 1
+end_res = @tf_res
+step_res = 1
+
+average = F
+component = Prop01
+
+reference_tag = 0
+}

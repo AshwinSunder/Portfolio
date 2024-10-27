@@ -1,0 +1,25 @@
+mesh_file_type = parametric
+el_type = l
+
+starting_point = (/0.0, 0.0, 0.0/)
+reference_chord_fraction  = 0.25
+
+!Section 1:
+chord = 0.053
+twist = -61.0
+airfoil_table = ../../Model/Airfoil/naca0012.c81
+!airfoil = NACA0012
+
+!Region 1:
+span = 0.118
+sweep = 0.0
+dihed = 0.0
+nelem_span = 16
+type_span =uniform
+
+!Section 2:
+chord = 0.053
+twist = -13.0
+airfoil_table = ../../Model/Airfoil/naca0012.c81
+!airfoil = NACA0012
+
