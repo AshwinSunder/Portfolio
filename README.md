@@ -60,7 +60,7 @@ Here are some additional projects I worked on during my bachelorâ€™s and masterâ
 - **Simulation Software**: Star-CCM+, ANSYS Fluent, ANSYS Workbench
 - **Modelling Software**: CATIA V5/V6, SolidWorks, Mastercam
 - **Simulation and Analysis**: Aerodynamic modeling, CFD, FFT, eigenvalue analysis, structural analysis
-- **Tools & Platforms**: Unix/Linux (Ubuntu), Git/GitHub, GitHub Pages, MS Office (Excel, Word, Powerpoint)
+- **Tools & Platforms**: Unix/Linux (Ubuntu), Git/GitHub, GitHub Pages, MS Office (Excel, Word, Powerpoint), SQL
 
 ---
 
