@@ -1,0 +1,93 @@
+basename = ./../../Output/Postpro/IntLoads/prop_wing
+data_basename = ./../../Output/dust/prop_wing
+
+analysis = {
+type   = integral_loads
+name   = Wing
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Wing
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = Prop01
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop01
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = Prop02
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop02
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = Prop03
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop03
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = Prop04
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop04
+
+reference_tag = 0
+}
+
+analysis = {
+type   = integral_loads
+name   = All
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = all
+
+reference_tag = 0
+}
+

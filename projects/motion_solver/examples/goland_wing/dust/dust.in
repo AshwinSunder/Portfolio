@@ -1,0 +1,35 @@
+! Simulation names 
+basename = ./Output/goland_test
+
+! Geometry input -----------------
+geometry_file = geo_input.h5 
+reference_file = References.in 
+
+! Timings ---------------------
+tstart = 0.000000 
+tend = 2.000000 
+dt = 0.001
+dt_out = 0.001
+output_start = T 
+ndt_update_wake = 1
+debug_level = 3 
+
+! Reference values ---------------------
+rho_inf = 1.020000 
+u_inf = (/180, 0., 0./)
+! Model parameters -------------------
+particles_box_min = (/  -1, -1, -4 /)
+particles_box_max = (/  23,  7,  4/)
+fmm = T
+! octree parameters--------------------
+box_length = 8
+n_box = (/3, 1 , 1/)
+octree_origin = (/-1 , -1 , -4/)
+n_octree_levels = 6
+min_octree_part = 5
+multipole_degree = 2
+vortstretch = T
+diffusion = T
+! wake parameters  -------------
+n_wake_panels = 3
+n_wake_particles = 200000

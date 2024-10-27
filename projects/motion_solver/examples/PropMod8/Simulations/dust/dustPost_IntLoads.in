@@ -1,0 +1,78 @@
+basename = ./../../Output/Postpro/IntLoads/propTractor_MS090k_V106-5_RPM2500_sos10000_V2
+data_basename = ./../../Output/dust/propTractor_MS090k_V106-5_RPM2500_sos10000_V2
+
+analysis = {
+type   = integral_loads
+name   = hubLoads_Prop01
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop01
+
+reference_tag = hub
+}
+
+analysis = {
+type   = integral_loads
+name   = hubLoads_Prop02
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop02
+
+reference_tag = hub
+}
+
+analysis = {
+type   = integral_loads
+name   = hubLoads_Prop03
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop03
+
+reference_tag = hub
+}
+
+analysis = {
+type   = integral_loads
+name   = hubLoads_Prop04
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = Prop04
+
+reference_tag = hub
+}
+
+analysis = {
+type   = integral_loads
+name   = hubLoads_all
+format = dat
+
+start_res = 1
+end_res = 2000
+step_res = 1
+
+average = F
+component = all
+
+reference_tag = hub
+}
+

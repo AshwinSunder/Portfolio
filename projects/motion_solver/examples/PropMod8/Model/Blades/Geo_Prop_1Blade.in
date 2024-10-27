@@ -1,0 +1,118 @@
+mesh_file_type = parametric
+el_type = l
+
+!> === Coupled with external structural solver (T/F) ===
+coupled      = T
+coupling_type = rbf
+coupling_node_file = ./../../Model/Blades/coupling_nodes_blade1.in
+coupling_node_orientation = (/ 1.0,0.0,0.0, 0.0,1.0,0.0,  0.0,0.0,1.0 /)
+
+!nelem_chord = 5
+
+starting_point = (/0.0, 0.0, 1.0/)
+reference_chord_fraction  = 0.25
+
+!Section 1:
+chord = 0.22
+twist = 58.8
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+
+!Region 1:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 2:
+chord = 0.22
+twist = 56.2
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+
+!Region 2:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 3:
+chord =0.22
+twist = 50.67
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+
+!Region 3:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 4:
+chord = 0.22
+twist = 45.65
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+!Region 4:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 5:
+chord = 0.22
+twist = 41.16
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+!Region 5:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 6:
+chord = 0.22
+twist = 37.01
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+!Region 6:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 7:
+chord = 0.22
+twist = 33.01
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+!Region 7:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 8:
+chord = 0.22
+twist = 29.49
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012
+!Region 8:
+span = 0.1125
+sweep = 0.0
+dihed = 0.0
+nelem_span = 2
+type_span =uniform
+
+!Section 9:
+chord = 0.22
+twist = 26.09
+airfoil_table = ./../../Model/airfoil_data/naca0012_dust.c81
+!airfoil = NACA0012

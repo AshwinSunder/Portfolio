@@ -1,0 +1,8 @@
+
+comp_name = Wing
+!geo_file  = wing_ll.in
+geo_file  = wing.in
+ref_tag   = WingRef
+
+file_name = geo_input.h5 
+

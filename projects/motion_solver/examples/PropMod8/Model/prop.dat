@@ -1,0 +1,28 @@
+# --- prop ---
+set: real numberBlade = 4;
+
+# mass Properties
+set: real massR       = 8.8;
+set: real massB       = massR/numberBlade;
+set: real massMN      = 25;
+
+# length Properties
+set: real radiusBlade  = 0.9;
+set: real cgBlade      = 0.5196;
+set: real cgRotor      = 0.4;
+set: real cgMotor      = 0.3;
+
+set: real lgt          = 0.2;
+
+# Stiffness Properties
+set: real kTpitch      = 120000;
+set: real kTyaw        = 120000;
+
+# collectivePitch
+#set: real betaRef      = 33.000;
+
+# Rotational Properties -> given in rad/s
+#set: real Omega        = 2500.0/60.0 * 2*pi;
+#set: real Omega0       = Omega*0.1;
+
+set: real VelInf       = 106.5;

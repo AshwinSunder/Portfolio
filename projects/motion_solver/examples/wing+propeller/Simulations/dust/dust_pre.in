@@ -1,0 +1,21 @@
+comp_name = Wing
+geo_file  = ../../Model/Wing/wing.in
+ref_tag   = Wing
+
+comp_name = Prop01
+geo_file = ../../Model/Blades/Geo_Prop_1Blade.in
+ref_tag = Hub
+
+comp_name = Prop02
+geo_file = ../../Model/Blades/Geo_Prop_2Blade.in
+ref_tag = Hub
+
+comp_name = Prop03
+geo_file = ../../Model/Blades/Geo_Prop_3Blade.in
+ref_tag = Hub
+
+comp_name = Prop04
+geo_file = ../../Model/Blades/Geo_Prop_4Blade.in
+ref_tag = Hub
+
+file_name = geo_input.h5
