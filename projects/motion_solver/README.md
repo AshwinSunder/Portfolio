@@ -10,6 +10,10 @@ A structural/motion solver developed in MATLAB to performed partitioned Fluid-St
   <img src="../../assets/motion_solver/coupled_simulation_workflow.png" alt="Structural/Motion Solver in MATLAB Screenshot" width="600"/>
 </p>
 <p align="center"><i>Figure 1: Structural/Motion Solver in MATLAB</i></p>
+<p align="center">
+  <img src="../../assets/motion_solver/motion_solver_reference_frame_definition.png" alt="Motion Solver Reference Frame Definition Screenshot" width="600"/>
+</p>
+<p align="center"><i>Figure 2: Motion Solver Reference Frame Definition</i></p>
 
 ## Downloads
 Read installation guide for preparing and installing the necessary software. Read software versions for latest software version compatibility.
