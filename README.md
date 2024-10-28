@@ -45,7 +45,7 @@ _Main Files:_ `/code` for source code, `/docs` for report and documentation.
 - **Skills Used**: MATLAB, Python, structural dynamics, computational mathematics, multi-body dynamics, software development, simulation modelling.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/befcfc04-ad23-4300-b0ab-088ba7fea287" alt="Structural/Motion Solver Screenshot" width="600"/>
+  <img src="https://github.com/user-attachments/assets/befcfc04-ad23-4300-b0ab-088ba7fea287" alt="Structural/Motion Solver in MATLAB Screenshot" width="600"/>
 </p>
 <p align="center"><i>Figure 1: Structural/Motion Solver in MATLAB</i></p>
 <p align="center">
