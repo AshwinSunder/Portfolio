@@ -4,11 +4,11 @@
   <tr>
     <td align="center" style="border: none;">
       <img src="../../assets/master_thesis/mode1_y0_75.gif" alt="Bending Mode Wing-Propeller Model Screenshot" width="478"/><br>
-      <i>Figure 2: Wing+Propeller (1st Natural Bending Wing Mode)</i>
+      <i>Figure 1: Wing+Propeller (1st Natural Bending Wing Mode)</i>
     </td>
     <td align="center" style="border: none;">
       <img src="../../assets/master_thesis/mode2_y0_75.gif" alt="Torsional Mode Wing-Propeller Model Screenshot" width="478"/><br>
-      <i>Figure 3: Wing+Propeller (1st Natural Torsional Wing Mode)</i>
+      <i>Figure 2: Wing+Propeller (1st Natural Torsional Wing Mode)</i>
     </td>
   </tr>
 </table>
