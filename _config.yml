@@ -1,8 +1,8 @@
 # Site settings
 title: My GitHub Pages Site
 description: A brief description of my site
-url: https://ashwinsunder.github.io/Portfolio
-baseurl: ""
+url: https://ashwinsunder.github.io
+baseurl: "/Portfolio"
 
 # Author information
 author:
