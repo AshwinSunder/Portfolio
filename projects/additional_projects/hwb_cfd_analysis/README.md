@@ -10,5 +10,11 @@ A k-ω SST turbulence model in combination with a Polyhedral Mesher approach is 
 - Simulation Results and Discussion
 - Conclusion
 
-![alt text](../../../assets/additional_projects/hwb_cfd_analysis/mesh_regions.png)
-![alt text](../../../assets/additional_projects/hwb_cfd_analysis/12.53_iso_top.png)
+<p align="center">
+  <img src="../../../assets/additional_projects/hwb_cfd_analysis/mesh_regions.png" alt="Mesh Optimization Regions Screenshot" width="600"/>
+</p>
+<p align="center"><i>Figure 1: Mesh Optimization Regions</i></p>
+<p align="center">
+  <img src="../../../assets/additional_projects/hwb_cfd_analysis/12.53_iso_top.png" alt="Star-CCM+ Pressure Coefficient Visualization Screenshot" width="600"/>
+</p>
+<p align="center"><i>Figure 2: Star-CCM+ Pressure Coefficient Visualization</i></p>

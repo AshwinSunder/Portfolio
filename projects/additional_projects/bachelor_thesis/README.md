@@ -12,6 +12,11 @@ The aviation market is expected to achieve a compound annual growth rate of 3% o
 - Results and Discussion
 - Conclusion
 
-
-![alt text](../../../assets/additional_projects/bachelor_thesis/matrix_fin_model.png)
-![alt text](../../../assets/additional_projects/bachelor_thesis/sample_analysis.png)
+<p align="center">
+  <img src="../../../assets/additional_projects/bachelor_thesis/matrix_fin_model.png" alt="Optimized Transply Effusion Cooling System Screenshot" width="600"/>
+</p>
+<p align="center"><i>Figure 1: Optimized Transply Effusion Cooling System</i></p>
+<p align="center">
+  <img src="../../../assets/additional_projects/bachelor_thesis/sample_analysis.png" alt="ANSYS Temperature Gradient Visualization (Isometric View) Screenshot" width="600"/>
+</p>
+<p align="center"><i>Figure 2: ANSYS Temperature Gradient Visualization (Isometric View)</i></p>
