@@ -32,6 +32,7 @@ I have a background in aerospace engineering, where I have developed expertise i
   - [Axial Turbine Stage Meanline Calculations](#1-d-meanline-design-point-calculation-and-loss-calculation-for-an-axial-turbine-stage)
   - [Transply Effusion Cooling System](#matrix-fin-based-transply-effusion-cooling-system-bachelor-thesis)
 - [Technical Skills](#technical-skills)
+- [Certificates](#certificates)
 - [Contact](#contact)
 
 ---
@@ -135,15 +136,20 @@ _Main Files:_ `/code` for source code, `/docs` for report and documentation.
 
 ## Technical Skills
 - **Programming Languages**: C/C++, MATLAB/Simulink, Python
-- **Simulation & Modeling Software**: Star-CCM+, ANSYS Fluent, CATIA, SolidWorks
-- **Tools & Platforms**: Unix/Linux (Ubuntu), Git/GitHub, SQL, Microsoft Office (Excel, Word, PowerPoint)
+- **Simulation & Modeling Software**: Star-CCM+, ANSYS Fluent, CATIA, SolidWorks, DUST
+- **Tools & Platforms**: Unix/Linux (Ubuntu), Git/GitHub, SQL, Microsoft Office (Excel, Word, PowerPoint), preCICE
 - **Core Competencies**: Aerodynamic modeling, CFD, FFT, eigenvalue analysis, structural analysis
+
+---
+
+## Certificates
+I have taken several online courses in Python, MATLAB, C, C++, SQL, Git and Data Analytics. The certificates I achieved for successful completion of these courses are available in the [certificates](./certificates) folder.
 
 ---
 
 ## Contact
 Feel free to reach out if you have any questions or would like to discuss potential collaborations!
 - **Email**: shreyasashwinsunder@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/shreyasashwinsunder
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/shreyasashwinsunder)
 
 Thank you for visiting my portfolio!

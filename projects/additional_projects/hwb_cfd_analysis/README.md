@@ -10,6 +10,14 @@ A k-ω SST turbulence model in combination with a Polyhedral Mesher approach is 
 - Simulation Results and Discussion
 - Conclusion
 
+## Software Used
+- Star-CCM+
+- CATIA V5
+- Microsoft Excel
+
+## Report
+For a comprehensive overview of this project, including methodology, results, and analysis, please refer to the [Project Report](./docs/CFD%20Report.pdf).
+
 <p align="center">
   <img src="../../../assets/additional_projects/hwb_cfd_analysis/mesh_regions.png" alt="Mesh Optimization Regions Screenshot" width="600"/>
 </p>

@@ -11,7 +11,8 @@ Welcome to my portfolio! I am a recent graduate in Aerospace Engineering from FH
    - [1-D Meanline Design Point Calculation for Axial Turbine Stage](#1-d-meanline-design-point-calculation-for-axial-turbine-stage)
    - [Transply Effusion Cooling System (Bachelor Thesis)](#transply-effusion-cooling-system-bachelor-thesis)
 3. [Technical Skills](#technical-skills)
-4. [Contact](#contact)
+4. [Certificates](#certificates)
+5. [Contact](#contact)
 
 ---
 
@@ -47,8 +48,11 @@ I have a background in aerospace engineering, focusing on simulation methods and
 
 ## Technical Skills
 - **Programming Languages**: C/C++, MATLAB, Python
-- **Software**: Star-CCM+, ANSYS Fluent, CATIA, SolidWorks
-- **Tools**: Git, SQL, MS Office
+- **Software**: Star-CCM+, ANSYS Fluent, CATIA, SolidWorks, DUST
+- **Tools**: Git, Unix/Linux, SQL, MS Office, preCICE
+
+## Certificates
+[View Certificates](./certificates)
 
 ## Contact
 Feel free to reach out if you have any questions or would like to discuss potential collaborations!

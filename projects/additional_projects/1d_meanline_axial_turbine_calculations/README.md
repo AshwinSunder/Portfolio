@@ -10,3 +10,10 @@ A python code was created to calculate the 1-D Meanline design point calculation
 - Methodology
 - Results and Discussion
 - Conclusion
+
+## Software Used
+- Python
+- Microsoft Excel
+
+## Report
+For a comprehensive overview of this project, including methodology, results, and analysis, please refer to the [Project Report](./docs/Performance%20Analysis%20Report.pdf).

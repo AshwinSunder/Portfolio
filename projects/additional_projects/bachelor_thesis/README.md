@@ -12,6 +12,16 @@ The aviation market is expected to achieve a compound annual growth rate of 3% o
 - Results and Discussion
 - Conclusion
 
+## Software Used
+- ANSYS Fluent
+- ANSYS Workbench
+- MATLAB
+- SolidWorks
+- Mastercam
+
+## Report
+For a comprehensive overview of this project, including methodology, results, and analysis, please refer to the [Project Report](./docs/Bachelor%20Thesis.pdf).
+
 <p align="center">
   <img src="../../../assets/additional_projects/bachelor_thesis/matrix_fin_model.png" alt="Optimized Transply Effusion Cooling System Screenshot" width="600"/>
 </p>
