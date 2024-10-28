@@ -8,7 +8,7 @@ This folder is organized into subfolders for each software. Each subfolder conta
   - Contains certificates for Python-related courses.
 - [MATLAB](./MATLAB)
   - Contains certificates for MATLAB-related courses.
-- [C/C++](./C,C%2B) 
+- [C/C++](./C,C++) 
   - Contains certificates for C and C++ courses.
 - [SQL](./SQL)
   - Contains certificates for SQL-related courses.
