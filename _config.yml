@@ -7,15 +7,15 @@ baseurl: "/Portfolio"
 # Author information
 author:
   name: Shreyas Ashwin Sunder
-  email: shreyasashwinsunder@gmail.com
-
-# Theme settings
-theme: jekyll-theme-slate
+  email: shreyasashwinsunder@gmail.com 
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+
+# Theme settings
+theme: jekyll-theme-slate
 
 # Social media links (optional)
 social:
@@ -32,7 +32,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENSE
-
-# Other configurations
-markdown: kramdown
+  - LICENSE.md
