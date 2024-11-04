@@ -1,0 +1,42 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_1
+parent_tag = 0
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = F
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = PivotPoint
+parent_tag = @ref_tag_1
+origin = (/@xp, @yp , @zp /)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = F
+moving = F
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = Hub
+parent_tag = PivotPoint
+origin = (/ @hubxp , 0.0, 0.0/)
+orientation = (/ -1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -1.0 /)
+multiple = F
+moving = F
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+reference_tag = @ref_tag_2
+parent_tag = Hub
+origin = (/0.0, 0.0, 0.0/)
+orientation = (/1.0,0.0,0.0, 0.0,1.0,0.0, 0.0,0.0,1.0/)
+multiple = T
+moving = F
+Multiplicity = {
+  mult_type  = rotor
+  n_blades   = 4
+  rot_axis   = @rot_axis
+  rot_rate   = @rot_rate
+  psi_0      = 0.0
+  hub_offset = 0.0
+  n_dofs     = 0
+}

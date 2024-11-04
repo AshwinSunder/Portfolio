@@ -1,0 +1,5 @@
+.page {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto;    /* Center the container */
+    padding: 20px;     /* Add some padding */
+}

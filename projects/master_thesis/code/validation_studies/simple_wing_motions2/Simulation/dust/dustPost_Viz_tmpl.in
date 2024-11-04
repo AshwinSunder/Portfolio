@@ -1,0 +1,22 @@
+basename = @sim_name
+data_basename = @output_file
+
+analysis = {
+  name = Viz
+  type = Viz
+
+  format = vtk
+
+  start_res = 1
+  end_res   = @tf_res
+  step_res  = 1
+
+  wake          = T
+  separate_wake = T
+
+  variable = Vorticity
+  variable = Velocity
+  variable = Pressure
+
+  component = all
+}

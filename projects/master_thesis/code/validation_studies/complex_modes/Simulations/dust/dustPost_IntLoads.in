@@ -1,0 +1,17 @@
+basename = ../../Output/wing_only/Postpro/Intloads/Intloads_wing_only_mode3_k1_75
+data_basename = ../../Output/wing_only/dust/wing
+
+analysis = {
+type   = integral_loads
+name   = W
+format = dat
+
+start_res = 1
+end_res = 182
+step_res = 1
+
+average = F
+component = Wing
+
+reference_tag = 0
+}

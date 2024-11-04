@@ -1,0 +1,41 @@
+basename = ./../../Output/Postpro/Viz/propTractor_MS090k_V106-5_RPM2500_sos10000_V2
+data_basename = ./../../Output/dust/propTractor_MS090k_V106-5_RPM2500_sos10000_V2
+
+analysis = {
+  name = visModelAll
+  type = Viz
+
+  format = vtk
+
+  start_res = 1
+  end_res   = 250
+  step_res  = 1
+
+  wake          = T
+  separate_wake = T
+
+  variable = Vorticity
+  variable = Velocity
+  variable = Pressure
+
+  component = all
+}
+
+!analysis = {
+  name = visModelP1
+  type = Viz
+
+  format = vtk
+
+  start_res = 1
+  end_res = 125
+  step_res = 1
+  wake = T
+  separate_wake = T
+
+  variable = Vorticity
+  variable = Velocity
+  variable = Pressure
+
+  component = Prop01
+}

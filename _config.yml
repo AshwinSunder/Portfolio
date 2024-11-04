@@ -1,0 +1,38 @@
+# Site settings
+title: My GitHub Pages Site
+description: A brief description of my site
+url: https://ashwinsunder.github.io
+baseurl: "/Portfolio"
+
+# Author information
+author:
+  name: Shreyas Ashwin Sunder
+  email: shreyasashwinsunder@gmail.com 
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Theme settings
+theme: jekyll-theme-slate
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# Social media links (optional)
+social:
+  github: AshwinSunder
+  linkedin: www.linkedin.com/in/shreyasashwinsunder
+
+## Plugins (if needed)
+# plugins:
+#  - jekyll-feed # Add feed support
+#  - jekyll-seo-tag # SEO tags
+
+# Exclude files and directories from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.md

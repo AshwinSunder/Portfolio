@@ -1,0 +1,22 @@
+basename = ../Output/plunge/Postpro/Viz/test
+data_basename = ../Output/plunge/dust/wing
+
+analysis = {
+  name = Viz
+  type = Viz
+
+  format = vtk
+
+  start_res = 1
+  end_res   = 1001
+  step_res  = 1
+
+  wake          = T
+  separate_wake = T
+
+  variable = Vorticity
+  variable = Velocity
+  variable = Pressure
+
+  component = all
+}

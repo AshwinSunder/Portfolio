@@ -1,0 +1,6 @@
+python:    3.10.12
+dust:      0.8.1-b (develop)
+precice:   2.5.0
+pyprecice: 2.5.0.4
+matlab:    R2021b - R2024a
+paraview:  5.12.0

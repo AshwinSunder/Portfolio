@@ -1,0 +1,4 @@
+set: const real dt =0.001000; 
+set: const real t_end =0.001000; 
+set: const real t_start =0.000000; 
+set: const real C = 20.000000;

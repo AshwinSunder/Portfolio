@@ -1,0 +1,30 @@
+!> === Mesh and elements types ===
+mesh_file_type = parametric
+el_type       = p
+!> === coupled with external structural solver (T/F) ===
+coupled      = T
+coupling_type = rbf
+coupling_node_file = coupling_nodes.in 
+coupling_node_orientation = (/ 1.0,0.0,0.0, 0.0,1.0,0.0,  0.0,0.0,1.0 /)
+!> === Geometry definition ===
+starting_point = (/ -0.14632 , 0.0 , 0.0/)
+reference_chord_fraction = 0.25
+
+nelem_chord = 30
+type_chord = cosineLE
+! First section
+chord = 1.829 
+twist = 0.05
+airfoil = NACA0012
+
+! First region
+span = 6.096
+sweep = 0.0
+dihed = 0.0
+nelem_span = 30
+type_span = uniform
+
+! Second section
+chord = 1.829 
+twist = 0.05
+airfoil = NACA0012

@@ -1,0 +1,23 @@
+!!!!
+! To obtain the radial thrust distribution , the time average of the sectional loads of a single blade is taken.
+! The chosen advance ratio in my thesis was J = 1.2
+!!!!
+
+basename = @sim_name
+data_basename = @output_file
+
+analysis = {
+type   = sectional_loads
+name   = @comp_name_1
+format = dat
+
+start_res = 1
+end_res = @tf_res
+step_res = 1
+
+average = F
+component = Prop01__01
+
+axis_nod = (/ 0.0, 0.0, 0.0 /)
+axis_dir = (/ 0.0, 1.0, 0.0 /)
+}

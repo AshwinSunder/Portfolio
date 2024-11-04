@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<precice-configuration>
+<log>
+    <sink
+      filter="(%Severity% > error)"
+      format="\033[0;33m ◀ in progress ▶ %ColorizedSeverity% %Message%"
+      enabled="true" /></log>
+      
+  <solver-interface dimensions="3">
+
+    <!-- === Data =========================================== -->
+    
+    <data:vector name="Position" />
+    <data:vector name="Rotation" />
+    <data:vector name="Velocity" />
+    <data:vector name="AngularVelocity" />
+    <data:vector name="Force" />
+    <data:vector name="Moment" />
+    
+    <!-- === Mesh =========================================== -->
+    <mesh name="matlab_nodes">
+      <use-data name="Position" />
+      <use-data name="Rotation" />
+      <use-data name="Velocity" />
+      <use-data name="AngularVelocity" />
+      <use-data name="Force" />
+      <use-data name="Moment" />
+    </mesh>
+
+    <mesh name="dust_mesh">
+      <use-data name="Position" />
+      <use-data name="Rotation" />
+      <use-data name="Velocity" />
+      <use-data name="AngularVelocity" />
+      <use-data name="Force" />
+      <use-data name="Moment" />
+    </mesh>
+
+    <!-- === Participants =================================== -->
+    <participant name="matlab">
+      <use-mesh   name="matlab_nodes" provide="yes"/>
+      <write-data name="Position"        mesh="matlab_nodes" />
+      <write-data name="Rotation"        mesh="matlab_nodes" />
+      <write-data name="Velocity"        mesh="matlab_nodes" />
+      <write-data name="AngularVelocity" mesh="matlab_nodes" />
+      <read-data  name="Force"           mesh="matlab_nodes" />
+      <read-data  name="Moment"          mesh="matlab_nodes" />
+    </participant>
+
+    <participant name="dust">
+      <use-mesh   name="dust_mesh"  provide="yes" />
+      <use-mesh   name="matlab_nodes" from="matlab" />
+      <write-data name="Force"           mesh="dust_mesh" />
+      <write-data name="Moment"          mesh="dust_mesh" />
+      <read-data  name="Position"        mesh="dust_mesh" />
+      <read-data  name="Rotation"        mesh="dust_mesh" />
+      <read-data  name="Velocity"        mesh="dust_mesh" />
+      <read-data  name="AngularVelocity" mesh="dust_mesh" />
+      <mapping:rbf-thin-plate-splines direction="read"  from="matlab_nodes" to="dust_mesh"
+        constraint="consistent" />
+      <mapping:rbf-thin-plate-splines direction="write" from="dust_mesh"  to="matlab_nodes"
+        constraint="conservative" />
+    </participant>
+
+    <!-- === Communication ================================== -->
+    <m2n:sockets exchange-directory="./../" from="matlab" to="dust"/>
+
+    <!-- === Coupling scheme ================================ -->
+    <coupling-scheme:serial-implicit>
+      <participants first="matlab" second="dust" />
+      <max-time value="100.0" />
+      <time-window-size value="-1" valid-digits="10" method="first-participant" />
+      <exchange data="Position"        from="matlab" mesh="matlab_nodes" to="dust" />
+      <exchange data="Rotation"        from="matlab" mesh="matlab_nodes" to="dust" />
+      <exchange data="Velocity"        from="matlab" mesh="matlab_nodes" to="dust" />
+      <exchange data="AngularVelocity" from="matlab" mesh="matlab_nodes" to="dust" />
+      <exchange data="Force"           from="dust"  mesh="matlab_nodes" to="matlab" />
+      <exchange data="Moment"          from="dust"  mesh="matlab_nodes" to="matlab" />
+      <max-iterations value="100"/>
+      <min-iteration-convergence-measure min-iterations="1" data="Moment" mesh="matlab_nodes"/>
+
+      
+      <!--<min-iteration-convergence-measure min-iterations="30" data="Moment" mesh="matlab_nodes" />-->
+      <relative-convergence-measure limit="1.0e-1" data="Position" mesh="matlab_nodes" />
+      <!--<relative-convergence-measure limit="1.0e-8" data="Rotation" mesh="matlab_nodes" />
+      <absolute-convergence-measure limit="1.0e-3" data="Force" mesh="matlab_nodes" />
+      <absolute-convergence-measure limit="1.0e-3" data="Moment" mesh="matlab_nodes" />
+      <relative-convergence-measure limit="1.0e-8" data="Velocity" mesh="matlab_nodes" />
+      <relative-convergence-measure limit="1.0e-8" data="AngularVelocity" mesh="matlab_nodes" />--> 
+      <acceleration:aitken>
+        <data name="Force" mesh="matlab_nodes"/>
+        <initial-relaxation value="0.1"/>
+      </acceleration:aitken>	
+      <!--<acceleration:IQN-ILS>
+          <initial-relaxation value="0.1" enforce="1"/>
+          <max-used-iterations value="100"/>
+          <time-windows-reused value="30"/>
+          <data scaling="1" mesh="matlab_nodes" name="Force"/>
+          <filter limit="1e-2" type="QR2"/>
+          <preconditioner freeze-after="-1" type="residual"/>
+      </acceleration:IQN-ILS>-->
+	
+    </coupling-scheme:serial-implicit>
+
+  </solver-interface>
+
+</precice-configuration>
